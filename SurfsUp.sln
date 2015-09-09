@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUp", "SurfsUp\SurfsUp.csproj", "{075E2D25-74AB-4E7E-9565-92872F97226B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUp.Interfaces", "SurfsUp.Interfaces\SurfsUp.Interfaces.csproj", "{BBEADECE-AF60-4BB2-BC7E-3B23BDAA57BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUp.Logging", "SurfsUp.Logging\SurfsUp.Logging.csproj", "{1ADD8EF6-0D68-489C-8E1F-03AD352201CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUp.Types", "SurfsUp.Types\SurfsUp.Types.csproj", "{224EC8A1-695C-43C6-A250-9946C3523D96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{075E2D25-74AB-4E7E-9565-92872F97226B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{075E2D25-74AB-4E7E-9565-92872F97226B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{075E2D25-74AB-4E7E-9565-92872F97226B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEADECE-AF60-4BB2-BC7E-3B23BDAA57BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEADECE-AF60-4BB2-BC7E-3B23BDAA57BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEADECE-AF60-4BB2-BC7E-3B23BDAA57BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEADECE-AF60-4BB2-BC7E-3B23BDAA57BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADD8EF6-0D68-489C-8E1F-03AD352201CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADD8EF6-0D68-489C-8E1F-03AD352201CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADD8EF6-0D68-489C-8E1F-03AD352201CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADD8EF6-0D68-489C-8E1F-03AD352201CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224EC8A1-695C-43C6-A250-9946C3523D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224EC8A1-695C-43C6-A250-9946C3523D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224EC8A1-695C-43C6-A250-9946C3523D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224EC8A1-695C-43C6-A250-9946C3523D96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

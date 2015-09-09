@@ -1,7 +1,11 @@
 ﻿using Newtonsoft.Json;
+using SurfsUp.Interfaces.Logging;
+using SurfsUp.Logging;
 using SurfsUp.Models;
+using SurfsUp.Types;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -14,11 +18,18 @@ namespace SurfsUp.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
+        private readonly ILogger logger;
+
+        public HomeController(ILogger logger)
+        {
+            this.logger = logger;
+        }
 
         public async Task<ActionResult> Index()
         {
+            logger.LogInfo(Enums.LogType.Logging, "Entering HomeController.Index");
+            Stopwatch timer = Stopwatch.StartNew();
+
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Add("Authorization", String.Format("Bearer {0}", "AAAAAAAAAAAAAAAAAAAAABGmhQAAAAAAZfMMsuAvHInzkvJOWP0UUAYydTA%3D6ZnBLNqSyXQ86TC05ykDeRa2WIErykCJm2m2g3dRFHL2pM8I1h"));
             Uri uri = new Uri("https://api.twitter.com/1.1/search/tweets.json?q=%23surfsUp");
@@ -36,7 +47,7 @@ namespace SurfsUp.Controllers
 
             string nextUrl = twitterObject.search_metadata.next_results;
 
-            for (int i = 0; i < 20;i++) 
+            for (int i = 0; i < 40; i++)
             {
                 HttpClient client1 = new HttpClient();
                 client1.DefaultRequestHeaders.Add("Authorization", String.Format("Bearer {0}", "AAAAAAAAAAAAAAAAAAAAABGmhQAAAAAAZfMMsuAvHInzkvJOWP0UUAYydTA%3D6ZnBLNqSyXQ86TC05ykDeRa2WIErykCJm2m2g3dRFHL2pM8I1h"));
@@ -55,7 +66,8 @@ namespace SurfsUp.Controllers
                 nextUrl = twitterObject1.search_metadata.next_results;
             }
 
-
+            timer.Stop();
+            logger.LogInfo(Enums.LogType.Logging, string.Format("Exiting HomeController.Index in {0}", timer.ElapsedMilliseconds));
 
             return View(model);
         }

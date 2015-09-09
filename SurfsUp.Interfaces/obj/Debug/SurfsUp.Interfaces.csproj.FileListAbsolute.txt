@@ -1,0 +1,7 @@
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Interfaces\bin\Debug\SurfsUp.Interfaces.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Interfaces\bin\Debug\SurfsUp.Interfaces.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Interfaces\obj\Debug\SurfsUp.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Interfaces\obj\Debug\SurfsUp.Interfaces.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Interfaces\obj\Debug\SurfsUp.Interfaces.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Interfaces\bin\Debug\SurfsUp.Types.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Interfaces\bin\Debug\SurfsUp.Types.pdb

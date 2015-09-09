@@ -1,0 +1,16 @@
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\SurfsUp.Logging.dll.config
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\SurfsUp.Logging.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\SurfsUp.Logging.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\LogentriesCore.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\LogentriesNLog.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\NLog.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\SurfsUp.Interfaces.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\SurfsUp.Interfaces.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\NLog.xml
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\obj\Debug\SurfsUp.Logging.csprojResolveAssemblyReference.cache
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\obj\Debug\SurfsUp.Logging.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\obj\Debug\SurfsUp.Logging.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\SurfsUp.Types.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Logging\bin\Debug\SurfsUp.Types.pdb

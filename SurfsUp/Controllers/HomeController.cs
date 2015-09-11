@@ -81,6 +81,34 @@ namespace SurfsUp.Controllers
             return View(model);
         }
 
+        public async Task<ActionResult> Refresh()
+        {
+            IList<Status> statuses = new List<Status>();
+
+            string nextUrl = "";
+
+            for (int i = 0; i < 100; i++)
+            {
+                string query = i == 0 ? "?q=%23surfsup" : nextUrl;
+
+                if (string.IsNullOrEmpty(query))
+                    break;
+
+                StatusSearchResponse searchResponse = await TwitterApi.SearchStatus(query);
+
+                if (searchResponse != null && searchResponse.statuses != null && searchResponse.statuses.Any())
+                {
+                    foreach (var status in searchResponse.statuses)
+                        statuses.Add(status);
+                }
+
+                nextUrl = searchResponse.search_metadata.next_results;
+            }
+
+            await statusRepository.RefreshStatuses(statuses);
+
+            return View();
+        }
         public string Base64Encode(string plainText)
         {
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);

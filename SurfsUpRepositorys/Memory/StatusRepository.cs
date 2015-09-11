@@ -30,5 +30,10 @@ namespace SurfsUpRepositorys.Memory
                 savedStatuses.Add(status);
             }
         }
+
+        public async Task RefreshStatuses(IList<Status> statuses)
+        {
+            savedStatuses = statuses;
+        }
     }
 }

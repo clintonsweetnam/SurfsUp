@@ -1,27 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SurfsUp.Models
+namespace SurfsUp.Types.Integrations.Twitter
 {
-    public class TwitterObject
-    {
-        public List<Status> statuses { get; set; }
-        public SearchMetadata search_metadata { get; set; }
-    }
-
-    public class Status
-    {
-        public Geo geo { get; set; }
-    }
-
-    public class Geo
-    {
-        public string type { get; set; }
-        public List<double> coordinates { get; set; }
-    }
-
     public class SearchMetadata
     {
         public double completed_in { get; set; }

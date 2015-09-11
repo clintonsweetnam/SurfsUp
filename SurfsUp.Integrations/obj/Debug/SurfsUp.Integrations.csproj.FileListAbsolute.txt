@@ -1,0 +1,9 @@
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\bin\Debug\SurfsUp.Integrations.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\bin\Debug\SurfsUp.Integrations.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\bin\Debug\SurfsUp.Types.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\bin\Debug\SurfsUp.Types.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\obj\Debug\SurfsUp.Integrations.csprojResolveAssemblyReference.cache
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\obj\Debug\SurfsUp.Integrations.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Integrations\obj\Debug\SurfsUp.Integrations.pdb

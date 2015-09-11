@@ -122,3 +122,7 @@ C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\System.Web.Http.xml
 C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\System.Web.Http.WebHost.xml
 C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\SurfsUp.Types.dll
 C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\SurfsUp.Types.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\SurfsUp.Integrations.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\SurfsUp.Integrations.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\SurfsUpRepositorys.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp\bin\SurfsUpRepositorys.pdb

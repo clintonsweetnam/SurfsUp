@@ -210,7 +210,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CoordinatesModel.cs" />
-    <Compile Include="Models\TwitterObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +307,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SurfsUp.Integrations\SurfsUp.Integrations.csproj">
+      <Project>{5ff712bd-45c4-492b-a611-e0c1ad2d1506}</Project>
+      <Name>SurfsUp.Integrations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SurfsUp.Interfaces\SurfsUp.Interfaces.csproj">
       <Project>{bbeadece-af60-4bb2-bc7e-3b23bdaa57bc}</Project>
       <Name>SurfsUp.Interfaces</Name>
@@ -319,6 +322,10 @@
     <ProjectReference Include="..\SurfsUp.Types\SurfsUp.Types.csproj">
       <Project>{224ec8a1-695c-43c6-a250-9946c3523d96}</Project>
       <Name>SurfsUp.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SurfsUpRepositorys\SurfsUpRepositorys.csproj">
+      <Project>{2c608bbe-244b-41fe-8774-dc6e99f40b9e}</Project>
+      <Name>SurfsUpRepositorys</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

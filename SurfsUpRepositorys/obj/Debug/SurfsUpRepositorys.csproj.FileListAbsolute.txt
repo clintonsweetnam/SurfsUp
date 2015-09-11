@@ -1,0 +1,7 @@
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUpRepositorys\bin\Debug\SurfsUpRepositorys.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUpRepositorys\bin\Debug\SurfsUpRepositorys.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUpRepositorys\bin\Debug\SurfsUp.Types.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUpRepositorys\bin\Debug\SurfsUp.Types.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUpRepositorys\obj\Debug\SurfsUpRepositorys.csprojResolveAssemblyReference.cache
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUpRepositorys\obj\Debug\SurfsUpRepositorys.dll
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUpRepositorys\obj\Debug\SurfsUpRepositorys.pdb

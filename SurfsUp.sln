@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUp.Logging", "SurfsUp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUp.Types", "SurfsUp.Types\SurfsUp.Types.csproj", "{224EC8A1-695C-43C6-A250-9946C3523D96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUp.Integrations", "SurfsUp.Integrations\SurfsUp.Integrations.csproj", "{5FF712BD-45C4-492B-A611-E0C1AD2D1506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfsUpRepositorys", "SurfsUpRepositorys\SurfsUpRepositorys.csproj", "{2C608BBE-244B-41FE-8774-DC6E99F40B9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,14 @@ Global
 		{224EC8A1-695C-43C6-A250-9946C3523D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{224EC8A1-695C-43C6-A250-9946C3523D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{224EC8A1-695C-43C6-A250-9946C3523D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF712BD-45C4-492B-A611-E0C1AD2D1506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF712BD-45C4-492B-A611-E0C1AD2D1506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF712BD-45C4-492B-A611-E0C1AD2D1506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF712BD-45C4-492B-A611-E0C1AD2D1506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C608BBE-244B-41FE-8774-DC6E99F40B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C608BBE-244B-41FE-8774-DC6E99F40B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C608BBE-244B-41FE-8774-DC6E99F40B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C608BBE-244B-41FE-8774-DC6E99F40B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

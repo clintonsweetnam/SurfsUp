@@ -1,8 +1,11 @@
 ﻿using Newtonsoft.Json;
+using SurfsUp.Integrations.Twitter;
 using SurfsUp.Interfaces.Logging;
 using SurfsUp.Logging;
 using SurfsUp.Models;
 using SurfsUp.Types;
+using SurfsUp.Types.Integrations.Twitter;
+using SurfsUpRepositorys.Memory;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,51 +22,57 @@ namespace SurfsUp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger logger;
+        private readonly StatusRepository statusRepository;
 
         public HomeController(ILogger logger)
         {
+            statusRepository = new StatusRepository();
             this.logger = logger;
         }
 
         public async Task<ActionResult> Index()
         {
+            string nextUrl = "";
+
             logger.LogInfo(Enums.LogType.Logging, "Entering HomeController.Index");
             Stopwatch timer = Stopwatch.StartNew();
 
-            HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Authorization", String.Format("Bearer {0}", "AAAAAAAAAAAAAAAAAAAAABGmhQAAAAAAZfMMsuAvHInzkvJOWP0UUAYydTA%3D6ZnBLNqSyXQ86TC05ykDeRa2WIErykCJm2m2g3dRFHL2pM8I1h"));
-            Uri uri = new Uri("https://api.twitter.com/1.1/search/tweets.json?q=%23surfsUp");
-            HttpResponseMessage response = await client.GetAsync(uri);
-            String responseString = await response.Content.ReadAsStringAsync();
-
-            TwitterObject twitterObject = JsonConvert.DeserializeObject<TwitterObject>(responseString);
-
             CoordinatesModel model = new CoordinatesModel();
-            foreach (var status in twitterObject.statuses)
+
+            IList<Status> savedStatuses =  await statusRepository.GetStatuses();
+
+            if (savedStatuses.Any())
             {
-                if (status.geo != null && status.geo.coordinates != null && status.geo.coordinates.Any())
-                    model.Coordinates.Add(status.geo.coordinates);
-            }
-
-            string nextUrl = twitterObject.search_metadata.next_results;
-
-            for (int i = 0; i < 40; i++)
-            {
-                HttpClient client1 = new HttpClient();
-                client1.DefaultRequestHeaders.Add("Authorization", String.Format("Bearer {0}", "AAAAAAAAAAAAAAAAAAAAABGmhQAAAAAAZfMMsuAvHInzkvJOWP0UUAYydTA%3D6ZnBLNqSyXQ86TC05ykDeRa2WIErykCJm2m2g3dRFHL2pM8I1h"));
-                Uri uri1 = new Uri("https://api.twitter.com/1.1/search/tweets.json" + nextUrl);
-                HttpResponseMessage response1 = await client.GetAsync(uri1);
-                String responseString1 = await response1.Content.ReadAsStringAsync();
-
-                TwitterObject twitterObject1 = JsonConvert.DeserializeObject<TwitterObject>(responseString1);
-
-                foreach (var status in twitterObject1.statuses)
+                foreach (var status in savedStatuses)
                 {
                     if (status.geo != null && status.geo.coordinates != null && status.geo.coordinates.Any())
                         model.Coordinates.Add(status.geo.coordinates);
                 }
+            }
+            else
+            {
+                for (int i = 0; i < 100; i++)
+                {
+                    string query = i == 0 ? "?q=%23surfsup" : nextUrl;
 
-                nextUrl = twitterObject1.search_metadata.next_results;
+                    if (string.IsNullOrEmpty(query))
+                        break;
+
+                    StatusSearchResponse searchResponse = await TwitterApi.SearchStatus(query);
+
+                    if (searchResponse != null && searchResponse.statuses != null && searchResponse.statuses.Any())
+                    {
+                        foreach (var status in searchResponse.statuses)
+                        {
+                            if (status.geo != null && status.geo.coordinates != null && status.geo.coordinates.Any())
+                                model.Coordinates.Add(status.geo.coordinates);
+                        }
+
+                        await statusRepository.SaveStatuses(searchResponse.statuses);
+                    }
+
+                    nextUrl = searchResponse.search_metadata.next_results;
+                }
             }
 
             timer.Stop();

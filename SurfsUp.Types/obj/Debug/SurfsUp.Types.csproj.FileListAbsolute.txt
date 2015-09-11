@@ -2,3 +2,4 @@ C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Types\bin\Debug\SurfsUp.Types.
 C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Types\bin\Debug\SurfsUp.Types.pdb
 C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Types\obj\Debug\SurfsUp.Types.dll
 C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Types\obj\Debug\SurfsUp.Types.pdb
+C:\Users\Clinton\Documents\GitHub\SurfsUp\SurfsUp.Types\obj\Debug\SurfsUp.Types.csprojResolveAssemblyReference.cache
